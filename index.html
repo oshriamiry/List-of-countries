@@ -5,36 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countries</title>
     <link rel="stylesheet" href="style.css">
-    <title>States</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>country 10</h1>
-    </header>
-    <main>
-        <br><br>
+    <div>
+        <h2>Countries</h2><span id="counter" class="sp1"></span>
+        <input type="search" id="search" placeholder="Search Country By Name">
+        <ul id="list">
+            <li>
+
+            </li>
+        </ul>
+        <!-- <ul>
+            <li>
+                <span class="sp2">Afghanistan - أفغانستان</span>
+                <h5>Asia</h5>
+                <img src="https://news-media.stanford.edu/wp-content/uploads/2016/04/20110008/afghanistan_news-795x530.jpg">
+            </li>
+        </ul>
         <ul>
             <li>
-                <img src="http://flags.fmcdn.net/data/flags/w580/il.png">
-                
+                <span class="sp2">United States - USA</span>
+                <h5>America</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png">
             </li>
-           
-            <li>United States</li>
-            <li>Brazil</li>
-            <li>Russia</li>
-            <li>Spain</li>
-            <li>Poland</li>
-            <li>Belgium</li>
-            <li>China</li>
-            <li>Argentina</li>
-            <li>Portugal</li>
         </ul>
-
-    </main>
-
-
+        <ul>
+            <li>
+                <span class="sp2">China - 中华人民共和国</span>
+                <h5>Asia</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/800px-Flag_of_the_People%27s_Republic_of_China.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Italy - Repubblica Italiana</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Algeria - الشعبية</span>
+                <h5>Africa</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/1024px-Flag_of_Algeria.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2"> Bolivia - Estado Plurinacional de Bolivia</span>
+                <h5>South America</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/1024px-Flag_of_Bolivia.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Andorra -	Principat d'Andorra</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/243px-Flag_of_Andorra.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Argentina - República Argentina</span>
+                <h5>South America</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/255px-Flag_of_Argentina.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Australia - Commonwealth of Australia</span>
+                <h5>continent</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Russia - Российская Федерация</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1024px-Flag_of_Russia.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Ireland - Éire</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1280px-Flag_of_Ireland.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Belgium - België</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/800px-Flag_of_Belgium.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Brazil - República Federativa do Brasil</span>
+                <h5>South America</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1024px-Flag_of_Brazil.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Germany - Bundesrepublik Deutschland</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Denmark - Kongeriget Danmark</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/225px-Flag_of_Denmark.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">India - भारत गणराज्य</span>
+                <h5>Asia</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1024px-Flag_of_India.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Greece - Ελληνική Δημοκρατία</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1024px-Flag_of_Europe.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Mexico - Estados Unidos Mexicanos</span>
+                <h5>North America</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sp2">Spain - Reino de España</span>
+                <h5>Europe</h5>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1024px-Flag_of_Spain.svg.png">
+            </li>
+        </ul> -->
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
