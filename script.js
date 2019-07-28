@@ -12,8 +12,7 @@ async function getCountries() {
 
         console.log(html);
 
-        const count = document.querySelector('#counter');
-        count.innerText = `(${arr.length})`
+
 
     }
     catch (error) {
@@ -29,7 +28,8 @@ function displayList(counteriesArr) {
     <img src = ${item.flag}>
     </li>`).join('');
     document.querySelector('#list').innerHTML = html;
-
+    const count = document.querySelector('#counter');
+    count.innerText = `(${arr.length})`
 }
 
 function onValueChange(e) {
